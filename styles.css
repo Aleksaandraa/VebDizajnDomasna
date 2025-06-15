@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(255, 229, 234);
+}
+
+nav {
+  background-color: #333;
+  color: white;
+  padding: 30px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+nav ul li a:hover {
+  background-color: #ffffff56;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+.first-div {
+  background-color: white;
+  color: black;
+  text-align: center;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.paragraph {
+  font-size: 17px;
+}
+
+.block-images {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10%;
+}
+
+.image-div {
+  background-color: white;
+  width: 60%;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.image {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+}
+
+.site-footer {
+  background-color: #222;
+  color: #eee;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 7%;
+}
+
+.footer-nav {
+  background-color: #222;
+}
+
+.footer-nav a {
+  color: #eee;
+  text-decoration: none;
+  margin: 0 8px;
+
+
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    text-align: center;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+  }
+
+  .first-div {
+    width: 90%;
+  }
+
+  .block-images {
+    display: flex;
+    flex-direction: column;
+    margin-top: -5px;
+  }
+
+  .image-div {
+    width: 90%;
+    margin-top: 20px;
+  }
+}

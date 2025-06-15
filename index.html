@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>За мене</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul id="nav-menu">
+      <li><a href="index.html">За мене</a></li>
+      <li><a href="travel.html">Патувања</a></li>
+      <li><a href="hobby.html">Хоби</a></li>
+      <li><a href="contact.html">Контакт</a></li>
+    </ul>
+  </nav>
+  <!--Divs-->
+  <div class="first-div">
+    <div class="first-child">
+      <p class="tittle">Здраво, јас сум Александра Николова!</p>
+      <p class="paragraph">Имам 19 години и сум студентка на ФИНКИ, насока Софтверско инженерство и информациски
+        системи, и оваа веб-страна е дел од мојата домашна задача. Преку овој проект имав можност практично да ги
+        применам знаењата од HTML, CSS и JavaScript и да изработам сопствена веб-презентација.
+        <br><br>Имам голем интерес за веб-дизајн и технологии, и секогаш сум подготвена да учам нови нешта. Се сметам за
+        одговорна, упорна и организирана личност. Работам посветено, внимавам на детали и секогаш се трудам задачите да
+        ги завршам квалитетно и навреме.
+        <br><br>Покрај техничките вештини, имам добра комуникација, сакам тимска работа, но исто така уживам и кога
+        работам самостојно на креативни проекти. Верувам дека континуираното учење и практикување се клучот за развој во
+        оваа динамична област.
+      </p>
+    </div>
+
+    <div class="second-child">
+      <img class="first-div-image" src="images/jas.jpg" alt="Фотографија од мене">
+    </div>
+  </div>
+
+  <div class="second-div">
+    <p class="second-div-paragraph">
+      Надвор од факултетот, сум личност која ужива во мали моменти – добра книга, кафе со блиските, прошетка во природа
+      или слушање музика што ми го подобрува денот.<br>
+      Сакам да патувам и да откривам нови места и култури, дури и кога тоа значи само кратка авантура во соседен град.
+      Ме привлекуваат уметноста, фотографијата, и убаво уредени простории.<br>
+      Обожавам креативни работи – дали е тоа уредување фотки, средување на мојата работна маса или едноставно да си
+      направам инспиративен mood board за некој нов проект.<br>
+
+    </p>
+  </div>
+  <div class="third-div">
+    <div class="1-third-div">
+      <img class="third-div-img" src="images/1.jpg" alt="Фотографија што опишува нешто за мене">
+    </div>
+    <div class="2-third-div">
+      <img class="third-div-img" src="images/2.jpg" alt="Фотографија што опишува нешто за мене">
+    </div>
+    <div class="3-third-div">
+      <img class="third-div-img" src="images/3.jpg" alt="Фотографија што опишува нешто за мене">
+    </div>
+  </div>
+  <!--Footer-->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>© 2025 Александра Николова</p>
+      <nav class="footer-nav">
+        <a href="index.html">За мене</a> |
+        <a href="travel.html">Патувања</a> |
+        <a href="hobby.html">Хоби</a> |
+        <a href="contact.html">Контакт</a>
+      </nav>
+      <p>Дизајнирано и изработено со љубов</p>
+    </div>
+  </footer>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-menu');
+      menu.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

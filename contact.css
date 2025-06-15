@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 229, 234);
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #ffffff56;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+.first-div {
+    background: linear-gradient(to right, #f7f1e3dc, #fafaface, #ffdfc4b5);
+    padding-top: 100px;
+    padding-bottom: 50px;
+    height: 50vh;
+}
+
+.first-div-tittle {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+    font-weight: bold;
+
+}
+
+.first-div-par {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.contact-div {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+}
+
+.contact-form-div {
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 50px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background: linear-gradient(to right, #f7f1e3dc, #f7e2abce, #ffdfc4b5);
+    border: none;
+    color: #000000;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.contact-form button:hover {
+    background-color: #ffcb8c;
+    color: white;
+}
+
+.footer-par22 {
+    margin-top: 10px;
+    font-weight: bold;
+
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+}
+
+.mail {
+    text-decoration: none;
+    color: black;
+}
+
+
+.site-footer {
+    background-color: #222;
+    color: #eee;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 7%;
+}
+
+.footer-nav {
+    background-color: #222;
+}
+
+.footer-nav a {
+    color: #eee;
+    text-decoration: none;
+    margin: 0 8px;
+
+
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #333;
+        text-align: center;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+
+    .first-div-tittle {
+        font-size: 19px;
+        margin-top: -40px;
+    }
+
+    .first-div-par {
+        font-size: 15px;
+        width: 90%;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        margin-top: -80px;
+    }
+
+    .footer-par2 {
+        margin-bottom: 20px;
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .icon {
+        margin-top: 10px;
+    }
+
+    .contact-div {
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding: 0;
+    }
+
+    .contact-form-div {
+        margin-top: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        padding: 0;
+    }
+
+    .contact-form {
+        padding: 0;
+        width: 100%;
+    }
+}

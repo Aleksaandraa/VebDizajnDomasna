@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хоби</title>
+    <link rel="stylesheet" href="hobby.css">
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul id="nav-menu">
+      <li><a href="index.html">За мене</a></li>
+      <li><a href="travel.html">Патувања</a></li>
+      <li><a href="hobby.html">Хоби</a></li>
+      <li><a href="contact.html">Контакт</a></li>
+    </ul>
+  </nav>
+    <!---Divs--->
+    <div class="first-div">
+        <div class="first-child animated animatedFadeInUp fadeInUp">
+            <p class="paragraph">
+                Слободното време за мене претставува вистинска можност да се поврзам со себе, со луѓето околу мене и со
+                светот. Едно од моите најголеми хобија е вежбањето – тоа не ми е само начин да останам физички активна,
+                туку и момент на ментално прочистување. Без разлика дали се работи за утринско трчање, тренинг во
+                теретана или прошетка во природа, секое движење ми носи нова енергија и мотивација.
+            </p>
+        </div>
+        <div class="second-child animated animatedFadeInUp fadeInUp">
+            <img class="image" src="images/workout.jpg" alt="">
+        </div>
+    </div>
+    <div class="second-div">
+        <div class="second-child animated animatedFadeInUp fadeInUp">
+            <img class="image" src="images/book.jpg" alt="">
+        </div>
+        <div class="first-child animated animatedFadeInUp fadeInUp">
+            <p class="paragraph">Кога не сум во движење, често можеш да ме најдеш со книга во рака. Читањето за мене е
+                бегство во светови полни со приказни, знаење и инспирација. Сакам книги што ќе ме натераат да
+                размислувам, но и такви што ќе ми овозможат да се опуштам и уживам во секоја прочитана страница.
+                Понекогаш еден добар цитат од книга ми останува во мислите со денови и ми го менува начинот на гледање
+                на работите.</p>
+        </div>
+    </div>
+    <div class="third-div">
+        <div class="first-child animated animatedFadeInUp fadeInUp">
+            <p class="paragraph">
+                Исто така, сакам да излегувам надвор и да се дружам – било да е тоа кафе со пријателите, прошетка низ
+                град или пак некое непланирано патување. Ми годи да бидам меѓу луѓе, да откривам нови места и да
+                создадам убави спомени. Забавите ми се посебно драги – момент кога можам да се ослободам од
+                секојдневието, да танцувам, да се смеам од срце и едноставно да уживам.
+
+                Верувам дека животот е најубав кога е исполнет со страсти, емоции и моменти кои нè прават среќни.
+            </p>
+        </div>
+        <div class="second-child animated animatedFadeInUp fadeInUp">
+            <img class="image" src="images/drinks.jpg" alt="">
+        </div>
+
+    </div>
+    <!--Footer-->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p>© 2025 Александра Николова</p>
+            <nav class="footer-nav">
+                <a href="index.html">За мене</a> |
+                <a href="travel.html">Патувања</a> |
+                <a href="hobby.html">Хоби</a> |
+                <a href="contact.html">Контакт</a>
+            </nav>
+            <p>Дизајнирано и изработено со љубов</p>
+        </div>
+    </footer>
+    <script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-menu');
+      menu.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
